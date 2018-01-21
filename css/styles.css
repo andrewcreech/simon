@@ -1,0 +1,145 @@
+/* My name is Simon
+by Andrew Creech 2017 */
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+	background: #CFD8DC;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+}
+
+.game {
+	width: 480px;
+	height: 480px;
+	background: #263238;
+	border-radius: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
+
+.pads {
+	width: 425px;
+	height: 425px;
+	position: relative;
+}
+.menu {
+	font-family: sans-serif;
+	font-size: 90px;
+	font-weight: bolder;
+	color: #263238;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	width: 200px;
+	height: 200px;
+	border: 20px solid #263238;
+	border-radius: 50%;
+	background: #CFD8DC;
+	position: absolute;
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	z-index: 1000;
+}
+.menu svg {
+	width: 125px;
+	height: 125px;
+}
+.menu svg:hover {
+	cursor: pointer;
+}
+
+.pad {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	outline: 0;
+}
+.pad:hover {
+	cursor: pointer;
+}
+
+.green {
+	margin: 0 20px 20px 0;
+	background: #557d57;
+	border-top-left-radius: 100%;
+}
+.green-active {
+	background: #5dd062;
+	border-top: 10px solid rgba(255,255,255,.3);
+	border-left: 10px solid rgba(255,255,255,.3);
+}
+
+.red {
+	margin: 0 0 20px 0;
+	background: #6f3737;
+	border-top-right-radius: 100%;
+}
+.red-active {
+	background: #EF5350;
+	border-top: 10px solid rgba(255,255,255,.3);
+	border-right: 10px solid rgba(255,255,255,.3);
+}
+
+.yellow {
+	margin-right: 20px;
+	background: #8a7524;
+	border-bottom-left-radius: 100%;
+}
+.yellow-active {
+	background: #FFC107;
+	border-bottom: 10px solid rgba(255,255,255,.4);
+	border-left: 10px solid rgba(255,255,255,.4);
+}
+
+.blue {
+	background: #125371;
+	border-bottom-right-radius: 100%;
+}
+.blue-active {
+	background: #03A9F4;
+	border-bottom: 10px solid rgba(255,255,255,.4);
+	border-right: 10px solid rgba(255,255,255,.4);
+}
